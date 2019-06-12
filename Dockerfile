@@ -1,7 +1,7 @@
 # Usage:
 # > docker build -t folexflu/cosmos-nameservice .
 # docker run --name nameservice -d -p 26658:26658 -p 26656:26656 -p 26657:26657 folexflu/cosmos-nameservice:latest seed moniker-1
-# docker run --name nameservice -d -p 26658:26658 -p 26656:26656 -p 26657:26657 -v /genesis.json:/root/genesis.json folexflu/cosmos-nameservice:latest seed peer moniker-2 seedid@ip:26657
+# docker run --name nameservice -d -p 26658:26658 -p 26656:26656 -p 26657:26657 -v /genesis.json:/root/genesis.json folexflu/cosmos-nameservice:latest peer moniker-2 seedid@ip:26657
 FROM golang:alpine AS build-env
 
 # Set up dependencies
